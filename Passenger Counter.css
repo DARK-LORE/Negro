@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+body {
+    background-image: url(https://images2.alphacoders.com/108/1089795.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-attachment: fixed;
+}
+.all {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+.People {
+    color: darkseagreen;
+    font-size: 100px;
+}
+.pre {
+    color: tomato;
+    font-size: 100px;
+}
+.number {
+    background-color: #1C2833;
+    height: 300px;
+    width: 300px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.number::before {
+    content: "";
+    background-image: conic-gradient(#F1C40F , #17A589 , transparent);;
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: anime 4s linear 1s infinite;
+    }
+.number::after {
+    content: "";
+    width: 290px;
+    height: 290px;
+    background-color: #1C2833;
+    position: absolute;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkseagreen;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+@keyframes anime {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.number p {
+    font-size: 160px;
+    color: darkseagreen;
+    z-index: 6;
+}
+.button1 {
+    background-color: #F1C40F;
+    color: aliceblue;
+    border-radius: 16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: larger;
+    border: none;
+    font-size: 80px;
+}
+.button2 {
+    background-color: #17A589;
+    color: aliceblue;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 80px;
+    border: none;
+}
+.square {
+    font-size: 80px;
+    color: dimgray;
+    height: 150px;
+    width: 150px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00897B;
+    z-index: 66;
+    position: absolute;
+    animation: square 4s 1s infinite;
+}
+@keyframes square {
+    0% {
+        rotate: 0deg;
+        background-color: #00897B;
+    }
+
+    25% {
+        rotate: 45deg;
+        background-color: #263238;
+    }
+
+    50% {
+        rotate: 90deg;
+        background-color: #E53935;
+    }
+
+    75% {
+        rotate: 180deg;
+        background-color:#FFC107;
+    }
+
+    100% {
+        rotate: 360deg;
+        background-color: #00897B;
+    }
+}
+#error {
+    color: #E53935;
+    font-size: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    min-height: 100vh;
+    z-index: 0;
+    position: absolute;
+}
+.moazz {
+    background-color: #F1C40F;
+}
